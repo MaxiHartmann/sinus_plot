@@ -30,10 +30,13 @@ private slots:
 
     void on_btn_plotSinus_clicked();
 
+    void on_btn_clear_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 
     QVector<double> qv_x, qv_y;
-    // QVector<double> qv_x_sin, qv_y_sin;
+    QVector<double> qv_x_sin, qv_y_sin;
+    double freq, amp;
 };
 #endif // MAINWINDOW_H

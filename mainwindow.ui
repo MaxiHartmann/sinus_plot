@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1272</width>
-    <height>671</height>
+    <width>1649</width>
+    <height>985</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,101 +19,22 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>1171</width>
-      <height>551</height>
+      <width>861</width>
+      <height>801</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QDoubleSpinBox" name="bx_x">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>570</y>
-      <width>62</width>
-      <height>26</height>
-     </rect>
+    <property name="mouseTracking">
+     <bool>false</bool>
     </property>
-   </widget>
-   <widget class="QDoubleSpinBox" name="bx_y">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>570</y>
-      <width>62</width>
-      <height>26</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_add">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>570</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Add</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_clear">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>570</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Clear</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>570</y>
-      <width>51</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>x</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>570</y>
-      <width>51</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>y</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>570</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Rescale</string>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_plotSinus">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>570</y>
+      <x>1370</x>
+      <y>100</y>
       <width>80</width>
       <height>25</height>
      </rect>
@@ -122,14 +43,154 @@
      <string>Plot Sinus</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_clear_2">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>100</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_6">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>60</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="lbl_amp">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>amplitude</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="bx_amp">
+     <property name="locale">
+      <locale language="English" country="UnitedStates"/>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>20</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="lbl_freq">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>frequency</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="bx_fb">
+     <property name="locale">
+      <locale language="English" country="UnitedStates"/>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>890</y>
+      <width>255</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QPushButton" name="btn_add">
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_clear">
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_rescale">
+     <property name="text">
+      <string>Rescale</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>820</y>
+      <width>76</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="bx_x"/>
+    </widget>
+    <widget class="QSplitter" name="splitter_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>y</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="bx_y"/>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1272</width>
-     <height>22</height>
+     <width>1649</width>
+     <height>30</height>
     </rect>
    </property>
   </widget>
